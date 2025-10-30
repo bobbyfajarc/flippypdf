@@ -53,7 +53,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 20% 50%, rgba(30, 64, 175, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.15) 0%, transparent 50%);
+            background:
+                radial-gradient(circle at 20% 50%, rgba(30, 64, 175, .15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(6, 182, 212, .15) 0%, transparent 50%);
             z-index: -1;
             pointer-events: none
         }
@@ -64,54 +66,54 @@
             right: 1rem !important;
             left: auto !important;
             z-index: 9999 !important;
-            margin: 0 !important;
+            margin: 0 !important
         }
 
         .lang-dropdown .dropdown-toggle {
-            background: rgba(30, 64, 175, 0.2);
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            border-radius: 0.75rem;
+            background: rgba(30, 64, 175, .2);
+            border: 1px solid rgba(59, 130, 246, .3);
+            border-radius: .75rem;
             color: var(--text-white);
-            padding: 0.6rem 1rem;
+            padding: .6rem 1rem;
             display: flex;
             align-items: center;
-            gap: 0.6rem;
+            gap: .6rem;
             font-weight: 500;
-            font-size: 0.85rem;
-            transition: background 0.2s ease
+            font-size: .85rem;
+            transition: background .2s ease
         }
 
         .lang-dropdown .dropdown-toggle:hover {
-            background: rgba(59, 130, 246, 0.3);
-            border-color: rgba(96, 165, 250, 0.5);
+            background: rgba(59, 130, 246, .3);
+            border-color: rgba(96, 165, 250, .5);
             color: var(--text-white)
         }
 
         .lang-dropdown .dropdown-menu {
-            background: rgba(15, 23, 42, 0.95) !important;
-            border: 1px solid rgba(59, 130, 246, 0.2);
-            border-radius: 0.75rem;
-            padding: 0.5rem;
+            background: rgba(15, 23, 42, .95) !important;
+            border: 1px solid rgba(59, 130, 246, .2);
+            border-radius: .75rem;
+            padding: .5rem;
             backdrop-filter: blur(10px);
             right: 0 !important;
             left: auto !important;
-            transform: none !important;
+            transform: none !important
         }
 
         .lang-dropdown .dropdown-item {
             color: var(--text-white);
-            padding: 0.6rem 1rem;
-            border-radius: 0.5rem;
+            padding: .6rem 1rem;
+            border-radius: .5rem;
             display: flex;
             align-items: center;
-            gap: 0.6rem;
-            font-size: 0.85rem;
-            transition: background 0.15s ease
+            gap: .6rem;
+            font-size: .85rem;
+            transition: background .15s ease
         }
 
         .lang-dropdown .dropdown-item:hover,
         .lang-dropdown .dropdown-item.active {
-            background: rgba(59, 130, 246, 0.3);
+            background: rgba(59, 130, 246, .3);
             color: var(--text-white)
         }
 
@@ -125,12 +127,12 @@
         .brand-logo {
             display: inline-flex;
             align-items: center;
-            gap: 0.75rem;
-            background: rgba(30, 64, 175, 0.2);
-            padding: 0.75rem 1.5rem;
+            gap: .75rem;
+            background: rgba(30, 64, 175, .2);
+            padding: .75rem 1.5rem;
             border-radius: 1.5rem;
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            margin-bottom: 0.75rem
+            border: 1px solid rgba(59, 130, 246, .3);
+            margin-bottom: .75rem
         }
 
         .brand-logo i {
@@ -149,37 +151,37 @@
         }
 
         .version-badge {
-            background: rgba(59, 130, 246, 0.2);
+            background: rgba(59, 130, 246, .2);
             color: var(--primary-blue-lighter);
-            padding: 0.25rem 0.75rem;
+            padding: .25rem .75rem;
             border-radius: 1rem;
-            font-size: 0.75rem;
+            font-size: .75rem;
             font-weight: 700;
-            margin-left: 0.5rem;
-            border: 1px solid rgba(59, 130, 246, 0.3)
+            margin-left: .5rem;
+            border: 1px solid rgba(59, 130, 246, .3)
         }
 
         .subtitle {
             color: var(--text-gray);
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem
+            font-size: .95rem;
+            margin-bottom: .5rem
         }
 
         .feature-tags {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 0.5rem;
+            gap: .5rem;
             margin-bottom: 1rem
         }
 
         .feature-tag {
-            background: rgba(30, 64, 175, 0.15);
+            background: rgba(30, 64, 175, .15);
             color: var(--text-gray);
-            padding: 0.35rem 0.75rem;
+            padding: .35rem .75rem;
             border-radius: 1rem;
-            font-size: 0.75rem;
-            border: 1px solid rgba(59, 130, 246, 0.2)
+            font-size: .75rem;
+            border: 1px solid rgba(59, 130, 246, .2)
         }
 
         .author-info {
@@ -192,37 +194,37 @@
         }
 
         .author {
-            background: rgba(59, 130, 246, 0.15);
+            background: rgba(59, 130, 246, .15);
             color: var(--primary-blue-lighter);
-            padding: 0.4rem 1rem;
+            padding: .4rem 1rem;
             border-radius: 1.5rem;
             font-weight: 600;
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            font-size: 0.85rem
+            border: 1px solid rgba(59, 130, 246, .3);
+            font-size: .85rem
         }
 
         .social-links {
             display: flex;
-            gap: 0.5rem
+            gap: .5rem
         }
 
         .social-btn {
             width: 36px;
             height: 36px;
-            background: rgba(30, 64, 175, 0.2);
-            border: 1px solid rgba(59, 130, 246, 0.3);
+            background: rgba(30, 64, 175, .2);
+            border: 1px solid rgba(59, 130, 246, .3);
             border-radius: 50%;
             color: var(--text-white);
             display: flex;
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: all .3s ease;
             font-size: 1.1rem
         }
 
         .social-btn:hover {
-            background: rgba(59, 130, 246, 0.3);
+            background: rgba(59, 130, 246, .3);
             border-color: var(--primary-blue-lighter);
             transform: translateY(-2px);
             color: var(--text-white)
@@ -230,117 +232,100 @@
 
         .location {
             color: var(--text-gray);
-            font-size: 0.8rem;
+            font-size: .8rem;
             display: flex;
             align-items: center;
-            gap: 0.4rem
+            gap: .4rem
         }
 
         .location i {
             color: var(--accent-cyan)
         }
 
-        .setup-guide {
-            background: rgba(30, 64, 175, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.2);
-            border-radius: 1rem;
-            padding: 2rem;
-            margin: 0 auto 2rem;
-            max-width: 1000px
-        }
-
-        .setup-guide h4 {
-            color: var(--text-white);
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem
-        }
-
-        .setup-guide h4 i {
-            color: var(--accent-cyan)
-        }
-
-        .setup-guide h5 {
-            color: var(--primary-blue-lighter);
-            font-size: 1rem;
-            font-weight: 600;
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem
-        }
-
-        .setup-guide p,
-        .setup-guide strong {
-            color: var(--text-white) !important
-        }
-
-        .setup-guide pre {
-            background: rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(59, 130, 246, 0.2);
-            border-radius: 0.5rem;
-            padding: 1rem;
-            overflow-x: auto;
-            color: var(--accent-cyan-light);
-            font-size: 0.85rem;
-            position: relative
-        }
-
-        .setup-guide code {
-            color: var(--primary-blue-lighter)
-        }
-
-        .setup-guide ul {
-            color: var(--text-white);
-            padding-left: 1.5rem
-        }
-
-        .setup-guide ul li {
-            margin-bottom: 0.5rem
-        }
-
+        .setup-guide,
+        .usage-section,
         .cdn-section {
-            background: linear-gradient(135deg, rgba(30, 64, 175, 0.15) 0%, rgba(6, 182, 212, 0.1) 100%);
-            border: 1px solid rgba(59, 130, 246, 0.3);
+            background: rgba(30, 64, 175, .1);
+            border: 1px solid rgba(59, 130, 246, .2);
             border-radius: 1rem;
             padding: 2rem;
             margin: 0 auto 2rem;
             max-width: 1000px
         }
 
+        .setup-guide h4,
+        .usage-section h4,
         .cdn-section h4 {
             color: var(--text-white);
             font-weight: 700;
             margin-bottom: 1.5rem;
             display: flex;
             align-items: center;
-            gap: 0.5rem
+            gap: .5rem
         }
 
+        .setup-guide h4 i,
+        .usage-section h4 i,
         .cdn-section h4 i {
             color: var(--accent-cyan)
         }
 
-        .cdn-section h5 {
-            color: var(--accent-cyan-light);
-            font-size: 0.95rem;
+        .setup-guide h5,
+        .usage-section h5 {
+            color: var(--primary-blue-lighter);
+            font-size: 1rem;
             font-weight: 600;
             margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
+            margin-bottom: .75rem
+        }
+
+        .setup-guide p,
+        .setup-guide strong,
+        .cdn-section p {
+            color: var(--text-white) !important
+        }
+
+        .setup-guide pre,
+        .usage-section pre {
+            background: rgba(0, 0, 0, .5);
+            border: 1px solid rgba(59, 130, 246, .2);
+            border-radius: .5rem;
+            padding: 1rem;
+            overflow-x: auto;
+            color: var(--accent-cyan-light);
+            font-size: .85rem;
+            position: relative
+        }
+
+        .setup-guide code,
+        .usage-section code {
+            color: var(--primary-blue-lighter)
+        }
+
+        .setup-guide ul,
+        .usage-section ul {
+            color: var(--text-white);
+            padding-left: 1.5rem
+        }
+
+        .setup-guide ul li,
+        .usage-section ul li {
+            margin-bottom: .5rem
+        }
+
+        .cdn-section {
+            background: linear-gradient(135deg, rgba(30, 64, 175, .15) 0%, rgba(6, 182, 212, .1) 100%)
+        }
+
+        .cdn-section h5 {
+            color: var(--accent-cyan-light);
+            font-size: .95rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: .75rem;
             display: flex;
             align-items: center;
-            gap: 0.5rem
-        }
-
-        .cdn-section h5 i {
-            color: var(--primary-blue-lighter);
-            font-size: 1.1rem
-        }
-
-        .cdn-section p {
-            color: var(--text-white) !important;
-            font-size: 0.9rem;
-            margin-bottom: 1rem
+            gap: .5rem
         }
 
         .code-block {
@@ -349,13 +334,13 @@
         }
 
         .code-block pre {
-            background: rgba(0, 0, 0, 0.7);
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            border-radius: 0.5rem;
+            background: rgba(0, 0, 0, .7);
+            border: 1px solid rgba(59, 130, 246, .3);
+            border-radius: .5rem;
             padding: 1rem;
             overflow-x: auto;
             color: var(--accent-cyan-light);
-            font-size: 0.85rem;
+            font-size: .85rem;
             margin: 0
         }
 
@@ -365,36 +350,32 @@
 
         .copy-btn {
             position: absolute;
-            top: 0.5rem;
-            right: 0.5rem;
-            background: rgba(59, 130, 246, 0.2);
-            border: 1px solid rgba(59, 130, 246, 0.3);
+            top: .5rem;
+            right: .5rem;
+            background: rgba(59, 130, 246, .2);
+            border: 1px solid rgba(59, 130, 246, .3);
             color: var(--accent-cyan-light);
-            padding: 0.4rem 0.8rem;
-            border-radius: 0.4rem;
+            padding: .4rem .8rem;
+            border-radius: .4rem;
             cursor: pointer;
-            font-size: 0.75rem;
+            font-size: .75rem;
             display: flex;
             align-items: center;
-            gap: 0.3rem;
-            transition: all 0.2s ease;
+            gap: .3rem;
+            transition: all .2s ease;
             font-weight: 600
         }
 
         .copy-btn:hover {
-            background: rgba(59, 130, 246, 0.3);
+            background: rgba(59, 130, 246, .3);
             border-color: var(--primary-blue-lighter);
             color: var(--text-white)
         }
 
         .copy-btn.copied {
-            background: rgba(74, 222, 128, 0.2);
-            border-color: rgba(74, 222, 128, 0.5);
+            background: rgba(74, 222, 128, .2);
+            border-color: rgba(74, 222, 128, .5);
             color: #4ade80
-        }
-
-        .copy-btn i {
-            font-size: 0.9rem
         }
 
         .mode-grid {
@@ -407,11 +388,11 @@
         }
 
         .mode-card {
-            background: rgba(30, 64, 175, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.2);
+            background: rgba(30, 64, 175, .1);
+            border: 1px solid rgba(59, 130, 246, .2);
             border-radius: 1.25rem;
             padding: 1.5rem;
-            transition: all 0.3s ease;
+            transition: all .3s ease;
             position: relative;
             overflow: hidden;
             display: flex;
@@ -419,39 +400,21 @@
             min-height: 280px
         }
 
-        .mode-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, transparent 100%);
-            opacity: 0;
-            transition: opacity 0.3s ease
-        }
-
         .mode-card:hover {
             transform: translateY(-5px);
             border-color: var(--primary-blue-light);
-            box-shadow: 0 15px 35px rgba(30, 64, 175, 0.3)
-        }
-
-        .mode-card:hover::before {
-            opacity: 1
+            box-shadow: 0 15px 35px rgba(30, 64, 175, .3)
         }
 
         .mode-icon {
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(6, 182, 212, 0.2) 100%);
+            background: linear-gradient(135deg, rgba(59, 130, 246, .3) 0%, rgba(6, 182, 212, .2) 100%);
             border-radius: 1rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 1rem;
-            position: relative;
-            z-index: 1
+            margin: 0 auto 1rem
         }
 
         .mode-icon i {
@@ -463,18 +426,14 @@
             color: var(--text-white);
             font-weight: 700;
             font-size: 1.1rem;
-            margin-bottom: 0.4rem;
-            position: relative;
-            z-index: 1
+            margin-bottom: .4rem
         }
 
         .mode-card-desc {
             flex: 1;
             color: var(--text-gray);
-            font-size: 0.85rem;
+            font-size: .85rem;
             margin-bottom: 1rem;
-            position: relative;
-            z-index: 1;
             line-height: 1.5;
             min-height: 60px
         }
@@ -484,108 +443,35 @@
             background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
             color: var(--text-white);
             border: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.75rem;
+            padding: .75rem 1.5rem;
+            border-radius: .75rem;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: .9rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
-            transition: all 0.3s ease;
-            position: relative;
-            z-index: 1;
+            gap: .5rem;
+            transition: all .3s ease;
             cursor: pointer;
             margin-top: auto
         }
 
         .mode-btn:hover:not(:disabled) {
             transform: scale(1.02);
-            box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
+            box-shadow: 0 8px 25px rgba(30, 64, 175, .4);
             background: linear-gradient(135deg, var(--primary-blue-light) 0%, var(--accent-cyan) 100%)
         }
 
         .mode-btn:disabled {
-            opacity: 0.5;
+            opacity: .5;
             cursor: not-allowed
-        }
-
-        .mode-btn i {
-            font-size: 1.1rem
-        }
-
-        .usage-section {
-            background: rgba(30, 64, 175, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.2);
-            border-radius: 1rem;
-            padding: 2rem;
-            margin: 0 auto 2rem;
-            max-width: 1000px
-        }
-
-        .usage-section h4 {
-            color: var(--text-white);
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem
-        }
-
-        .usage-section h4 i {
-            color: var(--accent-cyan)
-        }
-
-        .usage-section h5 {
-            color: var(--primary-blue-lighter);
-            font-size: 1rem;
-            font-weight: 600;
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem
-        }
-
-        .usage-section h6 {
-            color: var(--accent-cyan-light);
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-top: 1rem;
-            margin-bottom: 0.5rem
-        }
-
-        .usage-section pre {
-            background: rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(59, 130, 246, 0.2);
-            border-radius: 0.5rem;
-            padding: 1rem;
-            overflow-x: auto;
-            color: var(--accent-cyan-light);
-            font-size: 0.85rem
-        }
-
-        .usage-section code {
-            color: var(--primary-blue-lighter)
-        }
-
-        .usage-section ul {
-            color: var(--text-white);
-            padding-left: 1.5rem
-        }
-
-        .usage-section ul li {
-            margin-bottom: 0.5rem
-        }
-
-        .usage-section p {
-            color: var(--text-white);
-            margin-bottom: 0.75rem;
-            font-size: 0.9rem
         }
 
         .footer {
             text-align: center;
             padding: 1.5rem 0;
             color: var(--text-gray);
-            font-size: 0.8rem
+            font-size: .8rem
         }
 
         .footer a {
@@ -602,16 +488,16 @@
         }
 
         ::-webkit-scrollbar-track {
-            background: rgba(30, 64, 175, 0.1)
+            background: rgba(30, 64, 175, .1)
         }
 
         ::-webkit-scrollbar-thumb {
-            background: rgba(59, 130, 246, 0.5);
+            background: rgba(59, 130, 246, .5);
             border-radius: 10px
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(59, 130, 246, 0.7)
+            background: rgba(59, 130, 246, .7)
         }
 
         @media (max-width:768px) {
@@ -620,8 +506,8 @@
             }
 
             .lang-dropdown {
-                top: 0.5rem;
-                right: 0.5rem
+                top: .5rem;
+                right: .5rem
             }
 
             .hero-section {
@@ -631,21 +517,21 @@
             .mode-grid {
                 grid-template-columns: 1fr;
                 gap: 1rem;
-                padding: 0 0.75rem
+                padding: 0 .75rem
             }
 
             .setup-guide,
             .usage-section,
             .cdn-section {
-                margin: 0 0.75rem 2rem;
+                margin: 0 .75rem 2rem;
                 padding: 1.5rem
             }
 
             .copy-btn {
-                top: 0.3rem;
-                right: 0.3rem;
-                padding: 0.3rem 0.6rem;
-                font-size: 0.7rem
+                top: .3rem;
+                right: .3rem;
+                padding: .3rem .6rem;
+                font-size: .7rem
             }
         }
     </style>
@@ -658,10 +544,65 @@
     </noscript>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@latest/fonts/remixicon.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/flippy.min.css">
+
+    <!-- Flippy Assets Loader: LOCAL or CDN (latest, no version) -->
+    <script>
+        (function () {
+            // Choose asset mode via URL: ?assets=cdn or ?assets=local
+            // Default = 'local'
+            const q = new URLSearchParams(window.location.search);
+            const ASSET_MODE = (q.get('assets') || 'local').toLowerCase(); // 'local' | 'cdn'
+            const CDN_BASE = 'https://cdn.jsdelivr.net/gh/bobbyfajarc/flippypdf'; // latest (no version tag)
+
+            function loadFlippyAssets(mode) {
+                const head = document.head;
+
+                // CSS
+                const css = document.createElement('link');
+                css.rel = 'stylesheet';
+                css.href = mode === 'cdn'
+                    ? CDN_BASE + '/dist/css/flippy.min.css'
+                    : 'dist/css/flippy.min.css';
+                head.appendChild(css);
+
+                // JS
+                const js = document.createElement('script');
+                js.src = mode === 'cdn'
+                    ? CDN_BASE + '/dist/js/flippy.min.js'
+                    : 'dist/js/flippy.min.js';
+                head.appendChild(js);
+
+                // Expose for debugging
+                window.__FLIPPY_ASSET_MODE__ = mode;
+                console.log('Flippy assets loaded from:', mode === 'cdn' ? 'CDN (latest)' : 'LOCAL');
+            }
+
+            loadFlippyAssets(ASSET_MODE);
+        })();
+    </script>
+
+    <style>
+        /* Strong overrides for readability on dark background */
+        .usage-section p,
+        .usage-section li {
+            color: var(--text-white) !important;
+        }
+
+        .cdn-section p,
+        .cdn-section li {
+            color: var(--text-white) !important;
+        }
+
+        .code-block pre,
+        .setup-guide pre,
+        .usage-section pre {
+            color: var(--accent-cyan-light) !important;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -675,18 +616,13 @@
         </button>
         <ul class="dropdown-menu dropdown-menu-end">
             <li><a class="dropdown-item active" href="#" data-lang="id" data-flag="id" data-name="Indonesia"
-                    role="menuitem">
-                    <span class="fi fi-id" aria-hidden="true"></span> Indonesia
-                </a></li>
-            <li><a class="dropdown-item" href="#" data-lang="en" data-flag="us" data-name="English" role="menuitem">
-                    <span class="fi fi-us" aria-hidden="true"></span> English
-                </a></li>
-            <li><a class="dropdown-item" href="#" data-lang="ja" data-flag="jp" data-name="日本語" role="menuitem">
-                    <span class="fi fi-jp" aria-hidden="true"></span> 日本語
-                </a></li>
-            <li><a class="dropdown-item" href="#" data-lang="zh" data-flag="cn" data-name="中文" role="menuitem">
-                    <span class="fi fi-cn" aria-hidden="true"></span> 中文
-                </a></li>
+                    role="menuitem"><span class="fi fi-id" aria-hidden="true"></span> Indonesia</a></li>
+            <li><a class="dropdown-item" href="#" data-lang="en" data-flag="us" data-name="English"
+                    role="menuitem"><span class="fi fi-us" aria-hidden="true"></span> English</a></li>
+            <li><a class="dropdown-item" href="#" data-lang="ja" data-flag="jp" data-name="日本語" role="menuitem"><span
+                        class="fi fi-jp" aria-hidden="true"></span> 日本語</a></li>
+            <li><a class="dropdown-item" href="#" data-lang="zh" data-flag="cn" data-name="中文" role="menuitem"><span
+                        class="fi fi-cn" aria-hidden="true"></span> 中文</a></li>
         </ul>
     </div>
 
@@ -711,26 +647,18 @@
                     <i class="ri-code-s-slash-line" aria-hidden="true"></i>
                     <span data-i18n="by">oleh</span> <strong>Bobby Fajar Christian</strong> (@bobbyfajarc)
                 </p>
-
                 <div class="social-links">
                     <a href="https://instagram.com/bobbyfajarc" target="_blank" rel="noopener noreferrer"
-                        class="social-btn" title="Instagram" aria-label="Instagram Profile">
-                        <i class="ri-instagram-fill" aria-hidden="true"></i>
-                    </a>
+                        class="social-btn" title="Instagram" aria-label="Instagram Profile"><i class="ri-instagram-fill"
+                            aria-hidden="true"></i></a>
                     <a href="https://twitter.com/bobbyfajarc" target="_blank" rel="noopener noreferrer"
-                        class="social-btn" title="Twitter/X" aria-label="Twitter Profile">
-                        <i class="ri-twitter-x-fill" aria-hidden="true"></i>
-                    </a>
+                        class="social-btn" title="Twitter/X" aria-label="Twitter Profile"><i class="ri-twitter-x-fill"
+                            aria-hidden="true"></i></a>
                     <a href="https://facebook.com/bobbyfajarc" target="_blank" rel="noopener noreferrer"
-                        class="social-btn" title="Facebook" aria-label="Facebook Profile">
-                        <i class="ri-facebook-fill" aria-hidden="true"></i>
-                    </a>
+                        class="social-btn" title="Facebook" aria-label="Facebook Profile"><i class="ri-facebook-fill"
+                            aria-hidden="true"></i></a>
                 </div>
-
-                <p class="location">
-                    <i class="ri-map-pin-fill" aria-hidden="true"></i>
-                    Jakarta, Indonesia
-                </p>
+                <p class="location"><i class="ri-map-pin-fill" aria-hidden="true"></i>Jakarta, Indonesia</p>
             </div>
         </div>
 
@@ -751,10 +679,8 @@
 
             <h5>📁 Folder Structure</h5>
             <div class="code-block">
-                <button class="copy-btn" onclick="copyCode(this)">
-                    <i class="ri-file-copy-line"></i>
-                    <span>Copy</span>
-                </button>
+                <button class="copy-btn" onclick="copyCode(this)"><i
+                        class="ri-file-copy-line"></i><span>Copy</span></button>
                 <pre><code>flippy-optimized/
 ├── index.html
 ├── dist/
@@ -769,44 +695,28 @@
             </div>
 
             <h5>🚀 <span data-i18n="quick_start">Quick Start</span></h5>
-
             <strong>1️⃣ PHP</strong>
-            <div class="code-block">
-                <button class="copy-btn" onclick="copyCode(this)">
-                    <i class="ri-file-copy-line"></i>
-                    <span>Copy</span>
-                </button>
+            <div class="code-block"><button class="copy-btn" onclick="copyCode(this)"><i
+                        class="ri-file-copy-line"></i><span>Copy</span></button>
                 <pre><code>cd path/to/flippy-optimized
 php -S localhost:8000</code></pre>
             </div>
-
             <strong>2️⃣ Python 3</strong>
-            <div class="code-block">
-                <button class="copy-btn" onclick="copyCode(this)">
-                    <i class="ri-file-copy-line"></i>
-                    <span>Copy</span>
-                </button>
+            <div class="code-block"><button class="copy-btn" onclick="copyCode(this)"><i
+                        class="ri-file-copy-line"></i><span>Copy</span></button>
                 <pre><code>cd path/to/flippy-optimized
 python -m http.server 8000</code></pre>
             </div>
-
             <strong>3️⃣ Node.js</strong>
-            <div class="code-block">
-                <button class="copy-btn" onclick="copyCode(this)">
-                    <i class="ri-file-copy-line"></i>
-                    <span>Copy</span>
-                </button>
+            <div class="code-block"><button class="copy-btn" onclick="copyCode(this)"><i
+                        class="ri-file-copy-line"></i><span>Copy</span></button>
                 <pre><code>npm install -g http-server
 cd path/to/flippy-optimized
 http-server -p 8000</code></pre>
             </div>
-
             <strong>4️⃣ VS Code Live Server</strong>
-            <div class="code-block">
-                <button class="copy-btn" onclick="copyCode(this)">
-                    <i class="ri-file-copy-line"></i>
-                    <span>Copy</span>
-                </button>
+            <div class="code-block"><button class="copy-btn" onclick="copyCode(this)"><i
+                        class="ri-file-copy-line"></i><span>Copy</span></button>
                 <pre><code># 1. Install "Live Server" extension
 # 2. Right-click index.html
 # 3. Select "Open with Live Server"</code></pre>
@@ -815,29 +725,24 @@ http-server -p 8000</code></pre>
 
         <div class="cdn-section">
             <h4><i class="ri-link-m"></i> 📦 <span data-i18n="required_cdn">Required CDN</span></h4>
-
             <p data-i18n="cdn_text">Jika menggunakan Flippy di project lain, include CDN berikut:</p>
 
             <h5><i class="ri-bootstrap-line"></i> Bootstrap 5.3.2</h5>
             <div class="code-block">
-                <button class="copy-btn" onclick="copyCode(this)">
-                    <i class="ri-file-copy-line"></i>
-                    <span>Copy</span>
-                </button>
+                <button class="copy-btn" onclick="copyCode(this)"><i
+                        class="ri-file-copy-line"></i><span>Copy</span></button>
                 <pre><code>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
 &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;</code></pre>
             </div>
 
             <h5><i class="ri-file-pdf-line"></i> PDF.js 3.11.174</h5>
             <div class="code-block">
-                <button class="copy-btn" onclick="copyCode(this)">
-                    <i class="ri-file-copy-line"></i>
-                    <span>Copy</span>
-                </button>
+                <button class="copy-btn" onclick="copyCode(this)"><i
+                        class="ri-file-copy-line"></i><span>Copy</span></button>
                 <pre><code>&lt;script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
   if (typeof pdfjsLib !== 'undefined') {
-    pdfjsLib.GlobalWorkerOptions.workerSrc = 
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
       'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js';
   }
 &lt;/script&gt;</code></pre>
@@ -845,69 +750,72 @@ http-server -p 8000</code></pre>
 
             <h5><i class="ri-icon-box-line"></i> Remix Icons (Latest)</h5>
             <div class="code-block">
-                <button class="copy-btn" onclick="copyCode(this)">
-                    <i class="ri-file-copy-line"></i>
-                    <span>Copy</span>
-                </button>
+                <button class="copy-btn" onclick="copyCode(this)"><i
+                        class="ri-file-copy-line"></i><span>Copy</span></button>
                 <pre><code>&lt;link href="https://cdn.jsdelivr.net/npm/remixicon@latest/fonts/remixicon.css" rel="stylesheet"&gt;</code></pre>
             </div>
 
-            <h5><i class="ri-book-line"></i> Flippy (Minified)</h5>
+            <h5><i class="ri-book-line"></i> Flippy (LOCAL)</h5>
             <div class="code-block">
-                <button class="copy-btn" onclick="copyCode(this)">
-                    <i class="ri-file-copy-line"></i>
-                    <span>Copy</span>
-                </button>
-                <pre><code>&lt;link rel="stylesheet" href="dist/css/flippy.min.css"&gt;
+                <button class="copy-btn" onclick="copyCode(this)"><i
+                        class="ri-file-copy-line"></i><span>Copy</span></button>
+                <pre><code>&lt;!-- LOCAL --&gt;
+&lt;link rel="stylesheet" href="dist/css/flippy.min.css"&gt;
 &lt;script src="dist/js/flippy.min.js"&gt;&lt;/script&gt;</code></pre>
+            </div>
+            <h5 style="margin-top:1rem;"><i class="ri-cloud-line"></i> Flippy (CDN – Latest)</h5>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this)"><i
+                        class="ri-file-copy-line"></i><span>Copy</span></button>
+                <pre><code>&lt;!-- CDN (Latest, no version) --&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bobbyfajarc/flippypdf/dist/css/flippy.min.css"&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/bobbyfajarc/flippypdf/dist/js/flippy.min.js"&gt;&lt;/script&gt;</code></pre>
+            </div>
+            <h6 style="color: var(--primary-blue-lighter); font-weight:600;">Auto-switch via URL</h6>
+            <div class="code-block">
+                <button class="copy-btn" onclick="copyCode(this)"><i
+                        class="ri-file-copy-line"></i><span>Copy</span></button>
+                <pre><code>&lt;!-- Auto-switch by URL param: ?assets=cdn | ?assets=local --&gt;
+&lt;script&gt;
+  // Loader berada di &lt;head&gt;. Default "local", override dengan ?assets=cdn
+&lt;/script&gt;</code></pre>
             </div>
         </div>
 
-        <div style="text-align: center; margin: 3rem 0 2rem; padding: 0 1rem;">
-            <h2 style="color: var(--text-white); font-weight: 700; margin-bottom: 0.5rem;">
-                <i class="ri-play-circle-2-line" aria-hidden="true" style="color: var(--accent-cyan);"></i>
+        <div style="text-align:center;margin:3rem 0 2rem;padding:0 1rem;">
+            <h2 style="color:var(--text-white);font-weight:700;margin-bottom:.5rem;">
+                <i class="ri-play-circle-2-line" aria-hidden="true" style="color:var(--accent-cyan);"></i>
                 <span data-i18n="try_demo">Try the Demo</span>
             </h2>
-            <p style="color: var(--text-gray);" data-i18n="choose_mode">Pilih mode tampilan dan buka PDF sample</p>
+            <p style="color:var(--text-gray);" data-i18n="choose_mode">Pilih mode tampilan dan buka PDF sample</p>
         </div>
 
         <div class="mode-grid">
             <div class="mode-card">
-                <div class="mode-icon">
-                    <i class="ri-book-2-fill" aria-hidden="true"></i>
-                </div>
+                <div class="mode-icon"><i class="ri-book-2-fill" aria-hidden="true"></i></div>
                 <h3 data-i18n="mode1_title">Book Flip Mode</h3>
                 <p class="mode-card-desc" data-i18n="mode1_desc">3D page flip effect seperti membaca buku sungguhan</p>
                 <button class="mode-btn" data-pdf="example/limarayamusic.pdf" data-title="Sample PDF - BOOK"
                     data-mode="book" disabled>
-                    <i class="ri-play-circle-fill" aria-hidden="true"></i>
-                    <span data-i18n="open_btn">Buka PDF</span>
+                    <i class="ri-play-circle-fill" aria-hidden="true"></i><span data-i18n="open_btn">Buka PDF</span>
                 </button>
             </div>
-
             <div class="mode-card">
-                <div class="mode-icon">
-                    <i class="ri-file-list-2-line" aria-hidden="true"></i>
-                </div>
+                <div class="mode-icon"><i class="ri-file-list-2-line" aria-hidden="true"></i></div>
                 <h3 data-i18n="mode2_title">Webtoon Mode</h3>
                 <p class="mode-card-desc" data-i18n="mode2_desc">Scroll vertikal dari atas ke bawah</p>
                 <button class="mode-btn" data-pdf="example/limarayamusic.pdf" data-title="Sample PDF - WEBTOON"
                     data-mode="webtoon" disabled>
-                    <i class="ri-play-circle-fill" aria-hidden="true"></i>
-                    <span data-i18n="open_btn">Buka PDF</span>
+                    <i class="ri-play-circle-fill" aria-hidden="true"></i><span data-i18n="open_btn">Buka PDF</span>
                 </button>
             </div>
-
             <div class="mode-card">
-                <div class="mode-icon">
-                    <i class="ri-file-line" aria-hidden="true"></i>
-                </div>
+                <div class="mode-icon"><i class="ri-file-line" aria-hidden="true"></i></div>
                 <h3 data-i18n="mode3_title">Single Mode</h3>
                 <p class="mode-card-desc" data-i18n="mode3_desc">Satu halaman per tampilan</p>
                 <button class="mode-btn" data-pdf="example/limarayamusic.pdf" data-title="Sample PDF - SINGLE"
                     data-mode="single" disabled>
-                    <i class="ri-play-circle-fill" aria-hidden="true"></i>
-                    <span data-i18n="open_btn">Buka PDF</span>
+                    <i class="ri-play-circle-fill" aria-hidden="true"></i><span data-i18n="open_btn">Buka PDF</span>
                 </button>
             </div>
         </div>
@@ -918,22 +826,18 @@ http-server -p 8000</code></pre>
             <h5>1️⃣ Via HTML Button (Data Attributes)</h5>
             <p>Cara paling mudah - tambahkan data attributes di button HTML:</p>
             <div class="code-block">
-                <button class="copy-btn" onclick="copyCode(this)">
-                    <i class="ri-file-copy-line"></i>
-                    <span>Copy</span>
-                </button>
+                <button class="copy-btn" onclick="copyCode(this)"><i
+                        class="ri-file-copy-line"></i><span>Copy</span></button>
                 <pre><code>&lt;button 
-    class="btn btn-primary mode-btn" 
-    data-pdf="example/your-file.pdf"
-    data-title="My PDF Document"
-    data-mode="book"
-    data-scale="2.0"
-    data-page-width="450"
-    data-page-height="600"
-    data-sound-enabled="true"
-    data-sound-url="dist/sound/turnPage.mp3"&gt;
-    Buka PDF
-&lt;/button&gt;</code></pre>
+  class="btn btn-primary mode-btn" 
+  data-pdf="example/your-file.pdf"
+  data-title="My PDF Document"
+  data-mode="book"
+  data-scale="2.0"
+  data-page-width="450"
+  data-page-height="600"
+  data-sound-enabled="true"
+  data-sound-url="dist/sound/turnPage.mp3"&gt;Buka PDF&lt;/button&gt;</code></pre>
             </div>
 
             <h6>Available Data Attributes:</h6>
@@ -951,40 +855,36 @@ http-server -p 8000</code></pre>
             <h5>2️⃣ Via JavaScript (Full Options)</h5>
             <p>Untuk kontrol penuh, gunakan JavaScript:</p>
             <div class="code-block">
-                <button class="copy-btn" onclick="copyCode(this)">
-                    <i class="ri-file-copy-line"></i>
-                    <span>Copy</span>
-                </button>
+                <button class="copy-btn" onclick="copyCode(this)"><i
+                        class="ri-file-copy-line"></i><span>Copy</span></button>
                 <pre><code>const flippy = new Flippy({
-    // Required
-    pdfUrl: 'example/your-file.pdf',
+  // Required
+  pdfUrl: 'example/your-file.pdf',
 
-    // Display Settings
-    mode: 'book',              // 'book' | 'webtoon' | 'single'
-    title: 'My PDF Document',  // Document title
-    
-    // Rendering Quality
-    scale: 2.0,                // 1.0 - 3.0 (default: 2.0)
-    jpegQuality: 0.92,         // 0.0 - 1.0 (default: 0.92)
-    
-    // Book Mode Dimensions
-    pageWidth: 450,            // Page width in pixels
-    pageHeight: 600,           // Page height in pixels
-    
-    // Zoom Controls
-    minZoom: 0.5,              // Minimum zoom level
-    maxZoom: 3.0,              // Maximum zoom level
-    zoomStep: 0.1,             // Zoom increment per scroll
-    
-    // Performance
-    parallelRender: 2,         // Pages to render in parallel (1-4)
-    
-    // Sound Effects
-    soundEnabled: true,        // Enable page flip sound
-    soundUrl: 'dist/sound/turnPage.mp3'
+  // Display Settings
+  mode: 'book',              // 'book' | 'webtoon' | 'single'
+  title: 'My PDF Document',  // Document title
+  
+  // Rendering Quality
+  scale: 2.0,                // 1.0 - 3.0 (default: 2.0)
+  jpegQuality: 0.92,         // 0.0 - 1.0 (default: 0.92)
+  
+  // Book Mode Dimensions
+  pageWidth: 450,            // Page width in pixels
+  pageHeight: 600,           // Page height in pixels
+  
+  // Zoom Controls
+  minZoom: 0.5,              // Minimum zoom level
+  maxZoom: 3.0,              // Maximum zoom level
+  zoomStep: 0.1,             // Zoom increment per scroll
+  
+  // Performance
+  parallelRender: 2,         // Pages to render in parallel (1-4)
+  
+  // Sound Effects
+  soundEnabled: true,        // Enable page flip sound
+  soundUrl: 'dist/sound/turnPage.mp3'
 });
-
-// Open the viewer
 flippy.open();</code></pre>
             </div>
 
@@ -1019,87 +919,6 @@ flippy.open();</code></pre>
                 <li><code>Scroll</code> - <span data-i18n="key_zoom">Zoom</span></li>
                 <li><code>Esc</code> - <span data-i18n="key_close">Close</span></li>
             </ul>
-
-            <h5>5️⃣ Complete Example</h5>
-            <div class="code-block">
-                <button class="copy-btn" onclick="copyCode(this)">
-                    <i class="ri-file-copy-line"></i>
-                    <span>Copy</span>
-                </button>
-                <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="id"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Flippy Demo&lt;/title&gt;
-    
-    &lt;!-- Bootstrap --&gt;
-    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
-    &lt;!-- Remix Icons --&gt;
-    &lt;link href="https://cdn.jsdelivr.net/npm/remixicon@latest/fonts/remixicon.css" rel="stylesheet"&gt;
-    &lt;!-- Flippy CSS --&gt;
-    &lt;link rel="stylesheet" href="dist/css/flippy.min.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class="container py-5"&gt;
-        &lt;h1&gt;Flippy PDF Viewer&lt;/h1&gt;
-        
-        &lt;!-- Method 1: HTML Button --&gt;
-        &lt;button class="btn btn-primary mode-btn" 
-                data-pdf="example/sample.pdf"
-                data-mode="book"&gt;
-            Open with HTML Button
-        &lt;/button&gt;
-        
-        &lt;!-- Method 2: JavaScript --&gt;
-        &lt;button class="btn btn-success" onclick="openWithJS()"&gt;
-            Open with JavaScript
-        &lt;/button&gt;
-    &lt;/div&gt;
-
-    &lt;!-- Bootstrap JS --&gt;
-    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
-    &lt;!-- PDF.js --&gt;
-    &lt;script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"&gt;&lt;/script&gt;
-    &lt;script&gt;
-        if (typeof pdfjsLib !== 'undefined') {
-            pdfjsLib.GlobalWorkerOptions.workerSrc = 
-                'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js';
-        }
-    &lt;/script&gt;
-    &lt;!-- Flippy JS --&gt;
-    &lt;script src="dist/js/flippy.min.js"&gt;&lt;/script&gt;
-
-    &lt;script&gt;
-        // Method 2: JavaScript Function
-        function openWithJS() {
-            const flippy = new Flippy({
-                pdfUrl: 'example/sample.pdf',
-                mode: 'webtoon',
-                title: 'My Custom PDF',
-                scale: 1.8,
-                soundEnabled: false
-            });
-            flippy.open();
-        }
-
-        // Initialize HTML buttons
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('.mode-btn').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const flippy = new Flippy({
-                        pdfUrl: this.dataset.pdf,
-                        mode: this.dataset.mode || 'book',
-                        title: this.dataset.title || 'PDF Viewer'
-                    });
-                    flippy.open();
-                });
-            });
-        });
-    &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-            </div>
         </div>
 
         <div class="footer">
@@ -1107,7 +926,7 @@ flippy.open();</code></pre>
                 Flippy v1.0.0 &copy; 2025 <span data-i18n="by">oleh</span>
                 <a href="https://instagram.com/bobbyfajarc" target="_blank" rel="noopener noreferrer">Bobby Fajar
                     Christian</a><br>
-                <span data-i18n="made_with">Made with</span> <i class="ri-heart-fill" style="color: #ef4444;"
+                <span data-i18n="made_with">Made with</span> <i class="ri-heart-fill" style="color:#ef4444;"
                     aria-hidden="true"></i>
                 <span data-i18n="in_jakarta">di Jakarta, Indonesia</span>
             </p>
@@ -1115,10 +934,8 @@ flippy.open();</code></pre>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js"></script>
-
     <script>
         if (typeof pdfjsLib === 'undefined') {
             const script = document.createElement('script');
@@ -1126,11 +943,9 @@ flippy.open();</code></pre>
             document.head.appendChild(script);
         }
     </script>
-
     <script>
         let retryCount = 0;
         const maxRetries = 20;
-
         const setupPDFWorker = setInterval(function () {
             if (typeof pdfjsLib !== 'undefined') {
                 clearInterval(setupPDFWorker);
@@ -1146,227 +961,55 @@ flippy.open();</code></pre>
         }, 100);
     </script>
 
-    <script src="dist/js/flippy.min.js"></script>
-
     <script>
         function copyCode(btn) {
-            const codeBlock = btn.nextElementSibling;
-            const code = codeBlock.innerText;
-
+            const code = btn.nextElementSibling.innerText;
             navigator.clipboard.writeText(code).then(() => {
-                const originalText = btn.innerHTML;
+                const old = btn.innerHTML;
                 btn.innerHTML = '<i class="ri-check-line"></i><span>Copied!</span>';
                 btn.classList.add('copied');
-
-                setTimeout(() => {
-                    btn.innerHTML = originalText;
-                    btn.classList.remove('copied');
-                }, 2000);
-            }).catch(err => {
-                console.error('Failed to copy:', err);
-            });
+                setTimeout(() => { btn.innerHTML = old; btn.classList.remove('copied'); }, 2000);
+            }).catch(err => console.error('Failed to copy:', err));
         }
 
         const translations = {
-            id: {
-                subtitle: "Modern PDF Viewer dengan 3 Mode Tampilan",
-                by: "oleh",
-                req_server: "Web Server:",
-                req_server_text: "PHP, Python, Node.js, atau Live Server",
-                req_browser: "Browser:",
-                req_browser_text: "Chrome 90+, Firefox 88+, Safari 14+, Edge 90+",
-                req_internet: "Internet:",
-                req_internet_text: "Untuk load CDN (Bootstrap, PDF.js, Icons)",
-                req_storage: "Storage:",
-                req_storage_text: "Minimal 50MB untuk PDF",
-                quick_start: "Quick Start",
-                required_cdn: "Required CDN",
-                cdn_text: "Jika menggunakan Flippy di project lain, include CDN berikut:",
-                try_demo: "Try the Demo",
-                choose_mode: "Pilih mode tampilan dan buka PDF sample",
-                mode1_title: "Book Flip Mode",
-                mode1_desc: "3D page flip effect seperti membaca buku sungguhan dengan animasi realistis",
-                mode2_title: "Webtoon Mode",
-                mode2_desc: "Scroll vertikal dari atas ke bawah, sempurna untuk komik dan manga digital",
-                mode3_title: "Single Mode",
-                mode3_desc: "Satu halaman per tampilan, navigasi dengan tombol atau keyboard arrow keys",
-                open_btn: "Buka PDF",
-                usage: "Cara Penggunaan",
-                modes: "Mode Options",
-                mode_book: "3D flip effect seperti buku nyata",
-                mode_webtoon: "Vertical scroll untuk komik/manga",
-                mode_single: "Horizontal slide per halaman",
-                keyboard: "Keyboard Shortcuts",
-                key_nav: "Previous/Next page",
-                key_firstlast: "First/Last page",
-                key_zoom: "Zoom in/out",
-                key_close: "Close viewer",
-                made_with: "Made with",
-                in_jakarta: "di Jakarta, Indonesia"
-            },
-            en: {
-                subtitle: "Modern PDF Viewer with 3 Display Modes",
-                by: "by",
-                req_server: "Web Server:",
-                req_server_text: "PHP, Python, Node.js, or Live Server",
-                req_browser: "Browser:",
-                req_browser_text: "Chrome 90+, Firefox 88+, Safari 14+, Edge 90+",
-                req_internet: "Internet:",
-                req_internet_text: "To load CDN (Bootstrap, PDF.js, Icons)",
-                req_storage: "Storage:",
-                req_storage_text: "Minimum 50MB for PDF",
-                quick_start: "Quick Start",
-                required_cdn: "Required CDN",
-                cdn_text: "If using Flippy in another project, include these CDNs:",
-                try_demo: "Try the Demo",
-                choose_mode: "Choose display mode and open PDF sample",
-                mode1_title: "Book Flip Mode",
-                mode1_desc: "3D page flip effect like reading a real book with realistic animation",
-                mode2_title: "Webtoon Mode",
-                mode2_desc: "Vertical scroll from top to bottom, perfect for digital comics and manga",
-                mode3_title: "Single Mode",
-                mode3_desc: "One page per view, navigate with buttons or keyboard arrow keys",
-                open_btn: "Open PDF",
-                usage: "How to Use",
-                modes: "Mode Options",
-                mode_book: "3D flip effect like a real book",
-                mode_webtoon: "Vertical scroll for comics/manga",
-                mode_single: "Horizontal slide per page",
-                keyboard: "Keyboard Shortcuts",
-                key_nav: "Previous/Next page",
-                key_firstlast: "First/Last page",
-                key_zoom: "Zoom in/out",
-                key_close: "Close viewer",
-                made_with: "Made with",
-                in_jakarta: "in Jakarta, Indonesia"
-            },
-            ja: {
-                subtitle: "3つの表示モードを備えたモダンPDFビューア",
-                by: "作成者",
-                req_server: "Webサーバー:",
-                req_server_text: "PHP、Python、Node.js、またはLive Server",
-                req_browser: "ブラウザ:",
-                req_browser_text: "Chrome 90+、Firefox 88+、Safari 14+、Edge 90+",
-                req_internet: "インターネット:",
-                req_internet_text: "CDN(Bootstrap、PDF.js、Icons)を読み込むため",
-                req_storage: "ストレージ:",
-                req_storage_text: "PDF用に最小50MB",
-                quick_start: "クイックスタート",
-                required_cdn: "必要なCDN",
-                cdn_text: "Flippyを別のプロジェクトで使用する場合は、以下のCDNを含めてください:",
-                try_demo: "デモを試す",
-                choose_mode: "表示モードを選択してPDFサンプルを開く",
-                mode1_title: "ブックフリップモード",
-                mode1_desc: "実在の本を読んでいるようなリアルな3Dページフリップ効果",
-                mode2_title: "ウェブトゥーンモード",
-                mode2_desc: "上から下への縦スクロール、デジタルコミックやマンガに最適",
-                mode3_title: "シングルモード",
-                mode3_desc: "1ページずつの表示、ボタンまたはキーボードの矢印キーで移動",
-                open_btn: "PDFを開く",
-                usage: "使用方法",
-                modes: "モードオプション",
-                mode_book: "実本のような3Dフリップ効果",
-                mode_webtoon: "コミック/マンガの縦スクロール",
-                mode_single: "ページごとの横スライド",
-                keyboard: "キーボードショートカット",
-                key_nav: "前/次のページ",
-                key_firstlast: "最初/最後のページ",
-                key_zoom: "ズーム",
-                key_close: "ビューアを閉じる",
-                made_with: "愛を込めて作成",
-                in_jakarta: "ジャカルタ、インドネシアにて"
-            },
-            zh: {
-                subtitle: "具有3种显示模式的现代PDF查看器",
-                by: "作者",
-                req_server: "网络服务器:",
-                req_server_text: "PHP、Python、Node.js或Live Server",
-                req_browser: "浏览器:",
-                req_browser_text: "Chrome 90+、Firefox 88+、Safari 14+、Edge 90+",
-                req_internet: "互联网:",
-                req_internet_text: "用于加载CDN(Bootstrap、PDF.js、Icons)",
-                req_storage: "存储:",
-                req_storage_text: "PDF最少需要50MB",
-                quick_start: "快速开始",
-                required_cdn: "所需CDN",
-                cdn_text: "如果在其他项目中使用Flippy,请包含以下CDN:",
-                try_demo: "尝试演示",
-                choose_mode: "选择显示模式并打开PDF示例",
-                mode1_title: "书籍翻页模式",
-                mode1_desc: "3D页面翻转效果,就像阅读真实书籍一样",
-                mode2_title: "网络漫画模式",
-                mode2_desc: "从上到下的垂直滚动,非常适合数字漫画和漫画",
-                mode3_title: "单页模式",
-                mode3_desc: "一次显示一页,使用按钮或键盘箭头键导航",
-                open_btn: "打开PDF",
-                usage: "使用方法",
-                modes: "模式选项",
-                mode_book: "真实书籍的3D翻转效果",
-                mode_webtoon: "用于漫画/漫画的垂直滚动",
-                mode_single: "每页水平滑动",
-                keyboard: "键盘快捷键",
-                key_nav: "上一页/下一页",
-                key_firstlast: "第一页/最后一页",
-                key_zoom: "放大/缩小",
-                key_close: "关闭查看器",
-                made_with: "用心制作",
-                in_jakarta: "在印度尼西亚雅加达"
-            }
+            id: { subtitle: "Modern PDF Viewer dengan 3 Mode Tampilan", by: "oleh", req_server: "Web Server:", req_server_text: "PHP, Python, Node.js, atau Live Server", req_browser: "Browser:", req_browser_text: "Chrome 90+, Firefox 88+, Safari 14+, Edge 90+", req_internet: "Internet:", req_internet_text: "Untuk load CDN (Bootstrap, PDF.js, Icons)", req_storage: "Storage:", req_storage_text: "Minimal 50MB untuk PDF", quick_start: "Quick Start", required_cdn: "Required CDN", cdn_text: "Jika menggunakan Flippy di project lain, include CDN berikut:", try_demo: "Try the Demo", choose_mode: "Pilih mode tampilan dan buka PDF sample", mode1_title: "Book Flip Mode", mode1_desc: "3D page flip effect seperti membaca buku sungguhan dengan animasi realistis", mode2_title: "Webtoon Mode", mode2_desc: "Scroll vertikal dari atas ke bawah, sempurna untuk komik dan manga digital", mode3_title: "Single Mode", mode3_desc: "Satu halaman per tampilan, navigasi dengan tombol atau keyboard arrow keys", open_btn: "Buka PDF", usage: "Cara Penggunaan", modes: "Mode Options", mode_book: "3D flip effect seperti buku nyata", mode_webtoon: "Vertical scroll untuk komik/manga", mode_single: "Horizontal slide per halaman", keyboard: "Keyboard Shortcuts", key_nav: "Previous/Next page", key_firstlast: "First/Last page", key_zoom: "Zoom in/out", key_close: "Close viewer", made_with: "Made with", in_jakarta: "di Jakarta, Indonesia" },
+            en: { subtitle: "Modern PDF Viewer with 3 Display Modes", by: "by", req_server: "Web Server:", req_server_text: "PHP, Python, Node.js, or Live Server", req_browser: "Browser:", req_browser_text: "Chrome 90+, Firefox 88+, Safari 14+, Edge 90+", req_internet: "Internet:", req_internet_text: "To load CDN (Bootstrap, PDF.js, Icons)", req_storage: "Storage:", req_storage_text: "Minimum 50MB for PDF", quick_start: "Quick Start", required_cdn: "Required CDN", cdn_text: "If using Flippy in another project, include these CDNs:", try_demo: "Try the Demo", choose_mode: "Choose display mode and open PDF sample", mode1_title: "Book Flip Mode", mode1_desc: "3D page flip effect like reading a real book with realistic animation", mode2_title: "Webtoon Mode", mode2_desc: "Vertical scroll from top to bottom, perfect for digital comics and manga", mode3_title: "Single Mode", mode3_desc: "One page per view, navigate with buttons or keyboard arrow keys", open_btn: "Open PDF", usage: "How to Use", modes: "Mode Options", mode_book: "3D flip effect like a real book", mode_webtoon: "Vertical scroll for comics/manga", mode_single: "Horizontal slide per page", keyboard: "Keyboard Shortcuts", key_nav: "Previous/Next page", key_firstlast: "First/Last page", key_zoom: "Zoom in/out", key_close: "Close viewer", made_with: "Made with", in_jakarta: "in Jakarta, Indonesia" },
+            ja: { subtitle: "3つの表示モードを備えたモダンPDFビューア", by: "作成者", req_server: "Webサーバー:", req_server_text: "PHP、Python、Node.js、またはLive Server", req_browser: "ブラウザ:", req_browser_text: "Chrome 90+、Firefox 88+、Safari 14+、Edge 90+", req_internet: "インターネット:", req_internet_text: "CDN(Bootstrap、PDF.js、Icons)を読み込むため", req_storage: "ストレージ:", req_storage_text: "PDF用に最小50MB", quick_start: "クイックスタート", required_cdn: "必要なCDN", cdn_text: "Flippyを別のプロジェクトで使用する場合は、以下のCDNを含めてください:", try_demo: "デモを試す", choose_mode: "表示モードを選択してPDFサンプルを開く", mode1_title: "ブックフリップモード", mode1_desc: "実在の本を読んでいるようなリアルな3Dページフリップ効果", mode2_title: "ウェブトゥーンモード", mode2_desc: "上から下への縦スクロール、デジタルコミックやマンガに最適", mode3_title: "シングルモード", mode3_desc: "1ページずつの表示、ボタンまたはキーボードの矢印キーで移動", open_btn: "PDFを開く", usage: "使用方法", modes: "モードオプション", mode_book: "実本のような3Dフリップ効果", mode_webtoon: "コミック/マンガの縦スクロール", mode_single: "ページごとの横スライド", keyboard: "キーボードショートカット", key_nav: "前/次のページ", key_firstlast: "最初/最後のページ", key_zoom: "ズーム", key_close: "ビューアを閉じる", made_with: "愛を込めて作成", in_jakarta: "ジャカルタ、インドネシアにて" },
+            zh: { subtitle: "具有3种显示模式的现代PDF查看器", by: "作者", req_server: "网络服务器:", req_server_text: "PHP、Python、Node.js或Live Server", req_browser: "浏览器:", req_browser_text: "Chrome 90+、Firefox 88+、Safari 14+、Edge 90+", req_internet: "互联网:", req_internet_text: "用于加载CDN(Bootstrap、PDF.js、Icons)", req_storage: "存储:", req_storage_text: "PDF最少需要50MB", quick_start: "快速开始", required_cdn: "所需CDN", cdn_text: "如果在其他项目中使用Flippy,请包含以下CDN:", try_demo: "尝试演示", choose_mode: "选择显示模式并打开PDF示例", mode1_title: "书籍翻页模式", mode1_desc: "3D页面翻转效果,就像阅读真实书籍一样", mode2_title: "网络漫画模式", mode2_desc: "从上到下的垂直滚动,非常适合数字漫画和漫画", mode3_title: "单页模式", mode3_desc: "一次显示一页,使用按钮或键盘箭头键导航", open_btn: "打开PDF", usage: "使用方法", modes: "模式选项", mode_book: "真实书籍的3D翻转效果", mode_webtoon: "用于漫画/漫画的垂直滚动", mode_single: "每页水平滑动", keyboard: "键盘快捷键", key_nav: "上一页/下一页", key_firstlast: "第一页/最后一页", key_zoom: "放大/缩小", key_close: "关闭查看器", made_with: "用心制作", in_jakarta: "在印度尼西亚雅加达" }
         };
 
         document.querySelector('.lang-dropdown').addEventListener('click', function (e) {
             const item = e.target.closest('.dropdown-item');
             if (!item) return;
-
             e.preventDefault();
             const lang = item.dataset.lang;
             const flag = item.dataset.flag;
             const name = item.dataset.name;
-
             this.querySelectorAll('.dropdown-item').forEach(i => i.classList.remove('active'));
             item.classList.add('active');
-
             const toggle = this.querySelector('.dropdown-toggle');
             toggle.querySelector('.fi').className = `fi fi-${flag}`;
             toggle.querySelector('.lang-text').textContent = name;
-
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.dataset.i18n;
-                if (translations[lang]?.[key]) {
-                    el.textContent = translations[lang][key];
-                }
+                if (translations[lang]?.[key]) el.textContent = translations[lang][key];
             });
-
             document.documentElement.lang = lang;
         });
 
-        function isValidPDFPath(path) {
-            // Allow any .pdf file
-            return path.endsWith('.pdf');
-        }
-
+        function isValidPDFPath(path) { return path.endsWith('.pdf'); }
 
         document.addEventListener('DOMContentLoaded', function () {
             const checkLibsReady = setInterval(function () {
                 if (typeof pdfjsLib !== 'undefined' && typeof Flippy !== 'undefined') {
                     clearInterval(checkLibsReady);
-
-                    document.querySelectorAll('.mode-btn').forEach(btn => {
-                        btn.disabled = false;
-                    });
-
-                    console.log('✅ All libraries ready!');
-
+                    document.querySelectorAll('.mode-btn').forEach(btn => btn.disabled = false);
+                    console.log('✅ All libraries ready! (asset mode:', window.__FLIPPY_ASSET_MODE__, ')');
                     document.querySelectorAll('.mode-btn').forEach(btn => {
                         btn.addEventListener('click', function () {
                             const pdfPath = this.dataset.pdf;
-
-                            if (!isValidPDFPath(pdfPath)) {
-                                console.error('Invalid PDF path:', pdfPath);
-                                alert('❌ Invalid PDF file path');
-                                return;
-                            }
-
+                            if (!isValidPDFPath(pdfPath)) { console.error('Invalid PDF path:', pdfPath); alert('❌ Invalid PDF file path'); return; }
                             const flippy = new Flippy({
                                 pdfUrl: pdfPath,
                                 title: this.dataset.title || 'PDF Viewer',
@@ -1384,11 +1027,10 @@ flippy.open();</code></pre>
     <style>
         @keyframes spin {
             to {
-                transform: rotate(360deg);
+                transform: rotate(360deg)
             }
         }
     </style>
-
 </body>
 
 </html>
