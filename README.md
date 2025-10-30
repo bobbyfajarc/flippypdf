@@ -1,4 +1,4 @@
-
+```markdown
 # Flippy v1.0.0 - Modern PDF Viewer
 > Ultra-fast PDF viewer dengan 3 mode tampilan — **100% Vanilla JS, NO jQuery!**
 
@@ -41,9 +41,9 @@
 
 ## 📦 Struktur Project
 
-
+```
 flippypdf/
-├── index.html            # Demo page
+├── index.html           # Demo page
 ├── LICENSE
 ├── README.md
 ├── dist/
@@ -55,7 +55,7 @@ flippypdf/
 │       └── turnPage.mp3
 └── example/
     └── sample.pdf
-
+```
 
 ---
 
@@ -63,42 +63,52 @@ flippypdf/
 
 ### Jalankan Server
 
-**PHP**
-
-cd path/to/flippypdf
+```
+# PHP
 php -S localhost:8000
 
-
-**Python 3**
-
-cd path/to/flippypdf
+# Python 3
 python -m http.server 8000
 
-
-**Node.js**
-
+# Node.js
 npm install -g http-server
-cd path/to/flippypdf
 http-server -p 8000
-
+```
 
 **VS Code Live Server**
-- Install extension "Live Server"
-- Klik kanan `index.html` > Open with Live Server
+- Install extension **Live Server**
+- Klik kanan **index.html** → Open with Live Server
 
 ---
 
 ### Buka di Browser
 
+```
 http://localhost:8000
+```
 
+---
+
+## 🔗 CDN Link (Siap Copy Paste)
+
+```
+<!-- Flippy CSS & JS via jsDelivr CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bobbyfajarc/flippypdf@v1.0.0/dist/css/flippy.min.css">
+<script src="https://cdn.jsdelivr.net/gh/bobbyfajarc/flippypdf@v1.0.0/dist/js/flippy.min.js"></script>
+<script>
+const flippy = new Flippy({
+  pdfUrl: 'example/sample.pdf',
+  soundUrl: 'https://cdn.jsdelivr.net/gh/bobbyfajarc/flippypdf@v1.0.0/dist/sound/turnPage.mp3'
+});
+</script>
+```
 
 ---
 
 ## 🚀 Cara Penggunaan
 
 ### HTML Button (Data Attributes)
-
+```
 <button class="mode-btn"
         data-pdf="example/sample.pdf"
         data-title="Demo PDF"
@@ -110,10 +120,11 @@ http://localhost:8000
         data-sound-url="dist/sound/turnPage.mp3">
     Buka PDF
 </button>
+```
 
+### JavaScript: Full Options
 
-### JavaScript Full Options
-
+```
 const flippy = new Flippy({
   pdfUrl: 'example/sample.pdf',
   mode: 'book',           // 'book' | 'webtoon' | 'single'
@@ -128,9 +139,9 @@ const flippy = new Flippy({
   soundUrl: 'dist/sound/turnPage.mp3',
   parallelRender: 2,
   jpegQuality: 0.92
-});
+}); 
 flippy.open();
-
+```
 
 ---
 
@@ -155,9 +166,11 @@ flippy.open();
 
 ## 🐛 Troubleshooting
 
-- **"Gunakan web server"** — Jangan buka langsung file, gunakan server (PHP/Python/Node.js)
-- **PDF tidak tampil** — Cek path: `example/sample.pdf`
-- **Animasi laggy** — Turunkan scale/kualitas, close tab lain, gunakan Chrome/Edge
+| Masalah               | Penyebab                          | Solusi                                        |
+|-----------------------|-----------------------------------|-----------------------------------------------|
+| "Gunakan web server"  | Buka file langsung (`file://`)    | Jalankan server (PHP, Python, Node.js, Live)  |
+| PDF tidak tampil      | Path salah/file tidak ada         | Pastikan `example/sample.pdf` ada, cek nama   |
+| Animasi lag           | RAM/browser lambat                | Kurangi scale, tutup tab, gunakan Chrome/Edge |
 
 ---
 
@@ -199,3 +212,4 @@ Copyright (c) 2025 Bobby Fajar Christian
 
 Made with ❤️ in Jakarta, Indonesia  
 _Last updated: 30 Oktober 2025_
+```
