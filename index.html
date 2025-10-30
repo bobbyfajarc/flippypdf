@@ -7,9 +7,53 @@
     <title>FlippyPDF v1.0.0 - Modern PDF Viewer</title>
 
     <meta name="description"
-        content="Flippy v1.0.0 - Ultra fast PDF viewer dengan 3 mode tampilan by Bobby Fajar Christian">
-    <meta name="author" content="Bobby Fajar Christian (@bobbyfajarc)">
-    <meta name="keywords" content="pdf viewer, flipbook, webtoon, gallery, 3d flip, vanilla js, bobbyfajarc">
+        content="FlippyPDF v1.0.0 - Ultra fast PDF viewer dengan 3 mode tampilan by Bobby Fajar Christian.">
+    <meta name="author" content="Bobby Fajar Christian">
+    <meta name="keywords"
+        content="flippypdf, pdf viewer, flipbook, webtoon, gallery, 3d flip, vanilla js, bobby fajar christian, flippy pdf, flippy pdf viewer">
+
+    <!-- SEO -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <link id="canonical-link" rel="canonical" href="">
+    <script>document.getElementById('canonical-link').href = location.origin + location.pathname;</script>
+
+    <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+    <meta name="googlebot" content="index,follow">
+    <meta property="og:title" content="FlippyPDF v1.0.0 — Modern PDF Viewer (Book Flip, Webtoon, Single)">
+    <meta property="og:description"
+        content="Ultra fast PDF viewer: 3 display modes, sharp render, pure Vanilla JS. By Bobby Fajar Christian.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bobbyfajarc.github.io/flippypdf/">
+    <meta property="og:locale" content="id_ID">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="FlippyPDF v1.0.0 — Modern PDF Viewer">
+    <meta name="twitter:description"
+        content="Ultra fast PDF viewer dengan 3 mode tampilan: Book Flip, Webtoon, Single.">
+    <meta name="theme-color" content="#0F172A">
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FlippyPDF",
+    "softwareVersion": "1.0.0",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Web",
+    "author": {
+      "@type": "Person",
+      "name": "Bobby Fajar Christian"
+    },
+    "description": "Ultra fast PDF viewer with Book Flip, Webtoon, and Single page modes. Pure Vanilla JS.",
+    "url": "https://bobbyfajarc.github.io/flippypdf/",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
 
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
@@ -18,6 +62,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet">
+    </noscript>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@latest/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" rel="stylesheet">
+
 
     <style>
         * {
@@ -279,6 +336,7 @@
             margin-bottom: .75rem
         }
 
+        p,
         .setup-guide p,
         .setup-guide strong,
         .cdn-section p {
@@ -534,75 +592,40 @@
                 font-size: .7rem
             }
         }
+
+        .usage-section h6,
+        .usage-section ul li,
+        .cdn-section h6 {
+            color: var(--text-white) !important;
+        }
+
+        .usage-section ul li code,
+        .cdn-section ul li code {
+            color: var(--primary-blue-lighter) !important;
+        }
     </style>
 
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-            rel="stylesheet">
-    </noscript>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@latest/fonts/remixicon.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" rel="stylesheet">
-
-    <!-- Flippy Assets Loader: LOCAL or CDN (latest, no version) -->
+    <!-- Flippy Assets Loader -->
     <script>
         (function () {
-            // Choose asset mode via URL: ?assets=cdn or ?assets=local
-            // Default = 'local'
             const q = new URLSearchParams(window.location.search);
-            const ASSET_MODE = (q.get('assets') || 'local').toLowerCase(); // 'local' | 'cdn'
-            const CDN_BASE = 'https://cdn.jsdelivr.net/gh/bobbyfajarc/flippypdf'; // latest (no version tag)
-
+            const ASSET_MODE = (q.get('assets') || 'local').toLowerCase();
+            const CDN_BASE = 'https://cdn.jsdelivr.net/gh/bobbyfajarc/flippypdf';
             function loadFlippyAssets(mode) {
                 const head = document.head;
-
-                // CSS
                 const css = document.createElement('link');
                 css.rel = 'stylesheet';
-                css.href = mode === 'cdn'
-                    ? CDN_BASE + '/dist/css/flippy.min.css'
-                    : 'dist/css/flippy.min.css';
+                css.href = mode === 'cdn' ? CDN_BASE + '/dist/css/flippy.min.css' : 'dist/css/flippy.min.css';
                 head.appendChild(css);
-
-                // JS
                 const js = document.createElement('script');
-                js.src = mode === 'cdn'
-                    ? CDN_BASE + '/dist/js/flippy.min.js'
-                    : 'dist/js/flippy.min.js';
+                js.src = mode === 'cdn' ? CDN_BASE + '/dist/js/flippy.min.js' : 'dist/js/flippy.min.js';
                 head.appendChild(js);
-
-                // Expose for debugging
                 window.__FLIPPY_ASSET_MODE__ = mode;
                 console.log('Flippy assets loaded from:', mode === 'cdn' ? 'CDN (latest)' : 'LOCAL');
             }
-
             loadFlippyAssets(ASSET_MODE);
         })();
     </script>
-
-    <style>
-        /* Strong overrides for readability on dark background */
-        .usage-section p,
-        .usage-section li {
-            color: var(--text-white) !important;
-        }
-
-        .cdn-section p,
-        .cdn-section li {
-            color: var(--text-white) !important;
-        }
-
-        .code-block pre,
-        .setup-guide pre,
-        .usage-section pre {
-            color: var(--accent-cyan-light) !important;
-        }
-    </style>
-
 </head>
 
 <body>
