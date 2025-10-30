@@ -80,11 +80,6 @@ Contoh file demo: `example/limarayamusic.pdf`.
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bobbyfajarc/flippypdf/dist/css/flippy.min.css">
 <script src="https://cdn.jsdelivr.net/gh/bobbyfajarc/flippypdf/dist/js/flippy.min.js"></script>
 ```
-
-**Auto-switch Assets via URL**
-- Default: `local`  
-- Override: `?assets=cdn` atau `?assets=local`
-
 ---
 
 ## 🚀 Cara Penggunaan
