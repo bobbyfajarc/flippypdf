@@ -3,7 +3,7 @@
   <img src="README.png" width="200" alt="Flippy Logo">
 </p>
 
-# **FlippyPDF — Modern PDF Viewer (v1.0.0)**
+# **FlippyPDF — Modern PDF Viewer**
 > ⚡ Ultra-fast PDF viewer dengan 3 mode tampilan — **100% Pure Vanilla JS, no framework**.
 
 <p align="center">
@@ -319,13 +319,5 @@ Copyright (c) 2025 Bobby Fajar Christian
 
 ---
 
-## 📜 Changelog
-**v1.0.0 — 30 Oktober 2025**  
-- First stable release  
-- 3 display modes (Book/Webtoon/Single)  
-- Multi-language & responsive  
-- 100% Pure JS, MIT licensed
-
----
 
 <p align="center">Made with ❤️ in Jakarta, Indonesia</p>
